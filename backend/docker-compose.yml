@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .docker
+    container_name: hackaton-5g
+    ports:
+      - "81:80"
+    volumes:
+      - ./:/var/www/html
+  db:
+    image: mysql:5.7
+    #restart: always
+    container_name: hackaton-5g-db
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_DATABASE: '${DB_DATABASE}'
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+    volumes:
+      - ./db:/var/lib/mysql
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    #restart: always
+    container_name: hackaton-5g-phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      UPLOAD_LIMIT: 100M
+# docker-compose up -d
+# docker-compose up -d --build
+# docker exec -it e07e248f2817 bash
+# docker-compose build --no-cache --force-rm nombredelservicio(db,app,phpmyadmin)
+# docker stop $(docker ps -a -q)
+# docker inspect 2473635319d0 | grep IPAddress
+# docker network create <network name>

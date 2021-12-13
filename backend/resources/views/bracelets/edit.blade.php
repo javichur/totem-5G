@@ -1,0 +1,24 @@
+@extends('layouts.app')
+
+@section('content')
+    @include('layouts.parts.breadcrumbs', ['title' => 'Bracelets', 'pages' =>[['url' => url('/bracelets'), 'name' => 'Bracelets']] ])
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">{{ __('Edit bracelet') }}</div>
+                <div class="card-body">
+                    <form method="POST" action="{{ url('/bracelet/'.$bracelet->id.'/update') }}">
+                        @method('PUT')
+                        @csrf
+
+                        @include('bracelets.form')
+
+                        <button type="submit" class="btn btn-primary">@lang('Save')</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection

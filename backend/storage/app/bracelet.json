@@ -1,0 +1,74 @@
+{
+    "0": {
+        "uid": "1",
+        "last_action": "disabled"
+    },
+    "1": {
+        "uid": "2",
+        "last_action": "disabled"
+    },
+    "3": {
+        "uid": "4",
+        "last_action": "in"
+    },
+    "15": {
+        "uid": "3",
+        "last_action": "in",
+        "actions": [
+            {
+                "action": "in",
+                "date": "2021-12-13 16:35:37"
+            },
+            {
+                "action": "out",
+                "date": "2021-12-13 16:35:42"
+            },
+            {
+                "action": "in",
+                "date": "2021-12-13 16:35:52"
+            },
+            {
+                "action": "out",
+                "date": "2021-12-13 16:35:58"
+            },
+            {
+                "action": "in",
+                "date": "2021-12-13 16:36:06"
+            }
+        ]
+    },
+    "16": {
+        "uid": "5",
+        "last_action": "out",
+        "actions": [
+            {
+                "action": "out",
+                "date": "2021-12-13 16:34:25"
+            },
+            {
+                "action": "in",
+                "date": "2021-12-13 16:34:28"
+            },
+            {
+                "action": "out",
+                "date": "2021-12-13 16:34:33"
+            },
+            {
+                "action": "in",
+                "date": "2021-12-13 16:34:37"
+            },
+            {
+                "action": "out",
+                "date": "2021-12-13 16:34:41"
+            },
+            {
+                "action": "in",
+                "date": "2021-12-13 16:34:53"
+            },
+            {
+                "action": "out",
+                "date": "2021-12-13 16:36:32"
+            }
+        ]
+    }
+}
