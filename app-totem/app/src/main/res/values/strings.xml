@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Access</string>
+
+    <string name="title_section1">Entry</string>
+    <string name="title_section2">Exit</string>
+    <string name="title_section3">Historial</string>
+    <string name="title_section4">Solicitar asistencia</string>
+    <string name="title_section5">Settings</string>
+
+    <!--<string name="title_section3">Acreditar</string>
+    <string name="title_section4">Cuños</string>-->
+
+    <string name="cargando_informacion">Loading info</string>
+    <string name="obteniendo_informacion">Loading info</string>
+
+    <string name="acceso_lower">acceso</string>
+
+    <string name="acceso">ACCESO</string>
+    <string name="error">ERROR</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example"></string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Write to NFC tag</string>
+    <string name="content_description">Content</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="configuracion">Settings</string>
+    <string name="save_settings">SAVE SETTINGS</string>
+    <string name="buscando_pulsera">Searching for code</string>
+
+
+    <string-array name="Tags">
+        <item>Header</item>
+        <item>Entry</item>
+        <item>Exit</item>
+        <item>Historial</item>
+        <item>Solicitar asistencia</item>
+        <item>Settings</item>
+        <item>Foot</item>
+    </string-array>
+
+
+</resources>
